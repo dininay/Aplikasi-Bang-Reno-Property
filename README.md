@@ -1,2 +1,1 @@
-# Aplikasi-Keuangan-Pribadi
-Aplikasi Kuangan Pribadi
+# Aplikasi-Bang-Reno-Property
