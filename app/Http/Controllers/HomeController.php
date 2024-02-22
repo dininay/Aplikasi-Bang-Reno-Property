@@ -23,7 +23,7 @@ class HomeController extends Controller
         $rating = Rating::all();
         $artikel = Artikel::all();
         
-        $jasa = Jasa::orderBy('created_at', 'desc')->paginate(4);
+        $jasa = Jasa::orderBy('created_at', 'desc')->paginate(50);
         return view('home.index', compact('tentang', 'keunggulan', 'jasa', 'kontak', 'portofolio', 'rating', 'artikel'));
     }
     public function tentangView()

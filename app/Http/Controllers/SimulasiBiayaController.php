@@ -13,7 +13,8 @@ class SimulasiBiayaController extends Controller
     public function hitungBiaya(Request $request)
     {
         // Mengambil input dari formulir
-        $luas = $request->input('luas');
+        $panjang = $request->input('panjang');
+        $lebar = $request->input('lebar');
         $idJasaTerpilih = $request->input('jenislayanan');
 
         // Mengambil data untuk jasa yang dipilih dari database
@@ -22,7 +23,7 @@ class SimulasiBiayaController extends Controller
         // Memeriksa apakah jasa yang dipilih ada
         if ($jasaTerpilih) {
             // Menghitung biaya berdasarkan harga jasa yang dipilih
-            $biaya = $luas * $jasaTerpilih->harga;
+            $biaya = $panjang * $lebar * $jasaTerpilih->harga;
 
             // Menyimpan biaya yang dihitung dan informasi jasa yang dipilih ke dalam session storage
             $request->session()->put('biaya', $biaya);

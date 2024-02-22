@@ -302,10 +302,16 @@
             @csrf
               <div class="row">
                 <div class="col-4 mb-0">
-                <h5 for="luas">Luas Bangunan</h5>
+                <h5 for="panjang">Panjang Yang Dibutuhkan</h5>
                 </div>
                 <div class="col-8 mb-3">
-                    <input type="number" class="form-control" id="luas" name="luas" placeholder="Luas Bangunan" required>
+                    <input type="number" class="form-control" id="panjang" name="panjang" placeholder="Panjang Yang Dibutuhkan" required>
+                </div>
+                <div class="col-4 mb-0">
+                <h5 for="lebar">Lebar Yang Dibutuhkan</h5>
+                </div>
+                <div class="col-8 mb-3">
+                    <input type="number" class="form-control" id="lebar" name="lebar" placeholder="Lebar Yang Dibutuhkan" required>
                 </div>
                 <div class="col-4 mb-3">
                     <h5 for="jenislayanan">Jenis Layanan</h5>
